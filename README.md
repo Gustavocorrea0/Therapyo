@@ -1,4 +1,4 @@
-> APP Therapyo
+> APP Therapyo - 2024
 
 > Equipe de Desenvolvimento:
 
