@@ -9,7 +9,7 @@
     Vinicius Camacho
     Eduardo Zanzin
 
-> Desenvolvimento:
+> Liguagem e Banco de Dados:
 
     Linguagem de Programação: Reac Native(JavaScript)
     Banco de dados: local(dispositivo)
