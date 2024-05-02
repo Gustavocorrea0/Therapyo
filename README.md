@@ -1,10 +1,10 @@
 > APP Therapyo
 
-> Equipe:
+> Equipe de Desenvolvimento:
 
     Gustavo Alfredo
 
-    Caio Felipe Fernades
+    Caio Felipe
 
     Christyan Machado
 
