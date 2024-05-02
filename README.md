@@ -2,14 +2,14 @@
 
 > Equipe:
 
-> Gustavo Alfredo
+    Gustavo Alfredo
 
-> Caio Felipe Fernades
+    Caio Felipe Fernades
 
-> Christyan Machado
+    Christyan Machado
 
-> Gabriel Mensato
+    Gabriel Mensato
 
-> Vinicius Camacho
+    Vinicius Camacho
 
-> Eduardo ZanZin
+    Eduardo ZanZin
