@@ -7,7 +7,7 @@
     Christyan Machado
     Gabriel Mensato
     Vinicius Camacho
-    Eduardo ZanZin
+    Eduardo Zanzin
 
 > Desenvolvimento:
 
