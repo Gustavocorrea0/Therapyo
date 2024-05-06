@@ -52,7 +52,8 @@ export default styles = StyleSheet.create({
     backgroundColor: '#8996C7',
     marginTop: 30,
     marginLeft: -220,
-    borderRadius: 10
+    borderRadius: 10,
+    alignItems: 'center'
   },
 
   botaoDois: {
@@ -61,16 +62,18 @@ export default styles = StyleSheet.create({
     backgroundColor: '#77D6E3',
     marginTop: 25,
     marginLeft: -220,
-    borderRadius: 10
+    borderRadius: 10,
+    alignItems: 'center'
   },
 
   botaoTres: {
     width: 175,
     height: 175,
-    backgroundColor: '#D0CB51',
+    backgroundColor: '#D5AD51',
     marginTop: -375,
     marginLeft: 220,
-    borderRadius: 10
+    borderRadius: 10,
+    alignItems: 'center'
   },
 
   botaoQuatro: {
@@ -79,7 +82,8 @@ export default styles = StyleSheet.create({
     backgroundColor: '#96D863',
     marginTop: 27,
     marginLeft: 220,
-    borderRadius: 10
+    borderRadius: 10,
+    alignItems: 'center'
   },
 
   botaoCinco: {
@@ -88,7 +92,35 @@ export default styles = StyleSheet.create({
     backgroundColor: '#EDC868',
     marginTop: 20,
     marginLeft: 0,
-    borderRadius: 10
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+
+  tituloBotoes: {
+    fontSize: 23,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 10
+  },
+
+  tituloBotaoClinica: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 10
+  },
+
+  formatacaoEmojiRelatorio: {
+    height: 90,
+    width: 90,
+    marginLeft: 10,
+    marginTop: 5
+  },
+
+  formatacaoEmoji: {
+    height: 80,
+    width: 80,
+    marginTop: 10
   }
 
 })
