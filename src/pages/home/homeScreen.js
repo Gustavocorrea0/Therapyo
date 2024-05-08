@@ -1,11 +1,11 @@
 import React from 'react';
-import { SafeAreaView, Text, View, Image, TouchableOpacity } from 'react-native';
+import { SafeAreaView, Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
 import styles from './styleHome';
 
 function HomeScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
-
+      <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }} showsVerticalScrollIndicator={false}>
       <View style={styles.containerTopo}>
         <Text style={styles.tituloTherapyo}>Therapyo</Text>
       </View>
@@ -22,7 +22,7 @@ function HomeScreen({ navigation }) {
         >
           <Text style={styles.tituloBotoes}>Adicionar meu humor diário</Text>
           <Image
-            source={require('../assets/icons/smile.png')}
+            source={require('../../assets/icons/smile.png')}
             style={styles.formatacaoEmoji}
           />
         </TouchableOpacity>
@@ -30,7 +30,7 @@ function HomeScreen({ navigation }) {
         <TouchableOpacity style={styles.botaoDois} onPress={() => {}}>
           <Text style={styles.tituloBotoes}>Dicas sobre saúde</Text>
           <Image
-            source={require('../assets/icons/doctor.png')}
+            source={require('../../assets/icons/doctor.png')}
             style={styles.formatacaoEmoji}
           />
         </TouchableOpacity>
@@ -38,7 +38,7 @@ function HomeScreen({ navigation }) {
         <TouchableOpacity style={styles.botaoTres} onPress={() => {}}>
           <Text style={styles.tituloBotoes}>Preciso de{'\n'}ajuda</Text>
           <Image
-            source={require('../assets/icons/fever.png')}
+            source={require('../../assets/icons/fever.png')}
             style={styles.formatacaoEmoji}
           />
         </TouchableOpacity>
@@ -46,7 +46,7 @@ function HomeScreen({ navigation }) {
         <TouchableOpacity style={styles.botaoQuatro} onPress={() => {}}>
           <Text style={styles.tituloBotoes}>Relatório de humor</Text>
           <Image
-            source={require('../assets/icons/report.png')}
+            source={require('../../assets/icons/smile.png')}
             style={styles.formatacaoEmojiRelatorio}
           />
         </TouchableOpacity>
@@ -54,13 +54,13 @@ function HomeScreen({ navigation }) {
         <TouchableOpacity style={styles.botaoCinco} onPress={() => {}}>
           <Text style={styles.tituloBotaoClinica}>Clínicas para ajuda psicológica</Text>
           <Image
-            source={require('../assets/icons/hospital.png')}
+            source={require('../../assets/icons/hospital.png')}
             style={styles.formatacaoEmoji}
           />
         </TouchableOpacity>
 
       </View>
-
+      </ScrollView>
     </SafeAreaView>
   );
 }

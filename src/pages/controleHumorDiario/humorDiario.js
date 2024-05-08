@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SafeAreaView, Text, View, TouchableOpacity, Image, ScrollView, Modal, StyleSheet } from 'react-native';
+import { SafeAreaView, Text, View, TouchableOpacity, Image, ScrollView, Modal } from 'react-native';
 import styles from './styleHumorDiario'; // Importando o estilo que você forneceu
 
 export default function HumorDiario() {
@@ -28,8 +28,8 @@ export default function HumorDiario() {
 
           <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center' }}>
             {humorIcons.map((icon, index) => (
-              <TouchableOpacity 
-                key={index} 
+              <TouchableOpacity
+                key={index}
                 style={[styles.botaoUm, { backgroundColor: icon.bgColor, marginLeft: 10, marginRight: 10, marginTop: 20, borderWidth: selectedHumor === index ? 3 : 0, borderColor: 'blue' }]}
                 onPress={() => selectHumor(index)}
               >
@@ -71,12 +71,10 @@ export default function HumorDiario() {
 }
 
 const humorIcons = [
-  { label: 'Feliz', image: require('../assets/icons/smile.png'), bgColor: '#FFFF00' },
-  { label: 'Com Raiva', image: require('../assets/icons/smile.png'), bgColor: '#FF0000' },
-  { label: 'Triste', image: require('../assets/icons/smile.png'), bgColor: '#0000CD' },
-  { label: 'Calmo', image: require('../assets/icons/smile.png'), bgColor: '#6495ED' },
-  { label: 'Ansioso', image: require('../assets/icons/smile.png'), bgColor: '#008000' },
-  { label: 'Com Medo', image: require('../assets/icons/smile.png'), bgColor: '#4B0082' },
+  { label: 'Feliz', image: require('../../assets/icons/smile.png'), bgColor: '#FFFF00' },
+  { label: 'Com Raiva', image: require('../../assets/icons/smile.png'), bgColor: '#FF0000' },
+  { label: 'Triste', image: require('../../assets/icons/smile.png'), bgColor: '#0000CD' },
+  { label: 'Calmo', image: require('../../assets/icons/smile.png'), bgColor: '#6495ED' },
+  { label: 'Ansioso', image: require('../../assets/icons/smile.png'), bgColor: '#008000' },
+  { label: 'Com Medo', image: require('../../assets/icons/smile.png'), bgColor: '#4B0082' },
 ];
-
-// Aqui você precisaria definir os estilos para modalView, centeredView, modalText, button, buttonClose, textStyle baseado em suas preferências e requisitos de design.

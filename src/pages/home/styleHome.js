@@ -9,8 +9,8 @@ export default styles = StyleSheet.create({
   },
 
   containerBranco: {
-    width: '100%',
-    height: '85%',
+    width: 410,
+    height: '90%',
     backgroundColor: '#FFFFFF',
     marginTop: 20,
     borderTopLeftRadius: 50,
@@ -33,6 +33,7 @@ export default styles = StyleSheet.create({
   },
 
   tituloPagina: {
+    textAlign: 'center',
     fontSize: 35,
     color: "#FFFFFF",
     marginTop: 15,
