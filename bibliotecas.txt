@@ -1,0 +1,4 @@
+manipulacao de fonts: npx expo install expo-font
+fonte open sans: npx expo install expo-font @expo-google-fonts/open-sans
+navegacao: npm install @react-navigation/native
+npm install @react-navigation/native-stack

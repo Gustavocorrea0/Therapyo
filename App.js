@@ -1,77 +1,20 @@
-import { SafeAreaView, Text, View, Image, TouchableOpacity } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HumorDiario from './src/pages/humorDiario'; // Caminho para o arquivo de humor diário
+import HomeScreen from './src/pages/HomeScreen '; // Importe o cocmponente HomeScreen do arquivo App.js
 
-import styles from './style'
+const Stack = createNativeStackNavigator();
 
-export default function App() {
+function App() {
   return (
-    <SafeAreaView style={styles.container}>
-
-      <View style={styles.containerTopo}>
-        <Text style={styles.tituloTherapyo}>Therapyo</Text>
-      </View>
-
-      <Text style={styles.tituloPagina}>Início</Text>
-
-      <View style={styles.containerBranco}>
-
-        <Text style={styles.tituloContainerBranco}>Atividades</Text>
-
-        <TouchableOpacity style={styles.botaoUm} onPress={() => {}}>
-          <Text style={styles.tituloBotoes}>Adicionar meu humor diario</Text>
-
-          <Image
-            source={require('./src/assets/icons/smile.png')}
-            style={styles.formatacaoEmoji}
-          ></Image>
-
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.botaoDois} onPress={() => {}}>
-          <Text style={styles.tituloBotoes}>Dicas sobre saúde</Text>
-
-          <Image
-            source={require('./src/assets/icons/doctor.png')}
-            style={styles.formatacaoEmoji}
-          ></Image>
-
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.botaoTres} onPress={() => {}}>
-          <Text style={styles.tituloBotoes}>Preciso de{'\n'}ajuda</Text>
-
-          <Image
-            source={require('./src/assets/icons/fever.png')}
-            style={styles.formatacaoEmoji}
-          ></Image>
-
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.botaoQuatro} onPress={() => {}}>
-
-          <Text style={styles.tituloBotoes}>Relatorio de humor</Text>
-
-          <Image
-            source={require('./src/assets/icons/report.png')}
-            style={styles.formatacaoEmojiRelatorio}
-          ></Image>
-
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.botaoCinco} onPress={() => {}}>
-          <Text style={styles.tituloBotaoClinica}>Clinicas para ajuda psicológica</Text>
-        
-          <Image
-            source={require('./src/assets/icons/hospital.png')}
-            style={styles.formatacaoEmoji}
-          ></Image>
-
-        </TouchableOpacity>
-
-      </View>
-
-
-    </SafeAreaView>
-
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="HumorDiario" component={HumorDiario} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
+export default App;

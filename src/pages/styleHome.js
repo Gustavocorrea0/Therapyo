@@ -1,7 +1,6 @@
 import { StyleSheet } from "react-native";
 
 export default styles = StyleSheet.create({
-
   container: {
     flex: 1,
     backgroundColor: '#126EA1',
@@ -27,7 +26,6 @@ export default styles = StyleSheet.create({
   },
 
   tituloTherapyo: {
-    fontFamily: '',
     fontSize: 27,
     color: "#FFFFFF",
     marginTop: 50,
@@ -42,7 +40,6 @@ export default styles = StyleSheet.create({
   },
 
   tituloContainerBranco: {
-    fontFamily: 'OpenSans_700Bold', // CORRIGIR FALHA DE FONTE
     fontSize: 25,
     color: '#000000',
     fontWeight: 'bold',
