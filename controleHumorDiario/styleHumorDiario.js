@@ -1,17 +1,18 @@
 import { StyleSheet } from "react-native";
 
 export default styles = StyleSheet.create({
-
   container: {
     flex: 1,
     backgroundColor: '#126EA1',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop:40,
+    zIndex: 1000
   },
 
   containerBranco: {
     width: '100%',
-    height: '85%',
+    height: '90%',
     backgroundColor: '#FFFFFF',
     marginTop: 20,
     borderTopLeftRadius: 50,
@@ -27,14 +28,14 @@ export default styles = StyleSheet.create({
   },
 
   tituloTherapyo: {
-    fontFamily: '',
     fontSize: 27,
     color: "#FFFFFF",
-    marginTop: 50,
+    marginTop: 55,
     fontWeight: 'bold'
   },
 
   tituloPagina: {
+    textAlign:"center",
     fontSize: 35,
     color: "#FFFFFF",
     marginTop: 15,
@@ -42,7 +43,6 @@ export default styles = StyleSheet.create({
   },
 
   tituloContainerBranco: {
-    fontFamily: 'OpenSans_700Bold', // CORRIGIR FALHA DE FONTE
     fontSize: 25,
     color: '#000000',
     fontWeight: 'bold',
@@ -53,8 +53,8 @@ export default styles = StyleSheet.create({
     width: 175,
     height: 175,
     backgroundColor: '#8996C7',
-    marginTop: 30,
-    marginLeft: -220,
+    marginTop: 0,
+    marginLeft: -120,
     borderRadius: 10,
     alignItems: 'center'
   },
@@ -89,41 +89,95 @@ export default styles = StyleSheet.create({
     alignItems: 'center'
   },
 
-  botaoCinco: {
-    width: 175,
-    height: 175,
+  botaoConfirmar: {
+    width: '90%',
+    height:50,
     backgroundColor: '#EDC868',
     marginTop: 20,
     marginLeft: 0,
     borderRadius: 10,
     alignItems: 'center',
+    backgroundColor:'#000',
+    marginBottom:-40
   },
 
   tituloBotoes: {
     fontSize: 23,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginTop: 10
+    marginTop: 10,
   },
 
   tituloBotaoClinica: {
+    color:'#fff',
     fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginTop: 10
+    marginTop: 10,
+    
   },
 
   formatacaoEmojiRelatorio: {
     height: 90,
     width: 90,
     marginLeft: 10,
-    marginTop: 5
+    marginTop: 10
   },
 
   formatacaoEmoji: {
     height: 80,
     width: 80,
-    marginTop: 10
-  }
+    marginTop: 23
+  },
 
+
+  //css modal//
+  container1: {
+    flex: 1,
+    backgroundColor: '#126EA1',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  // Estilos para o modal
+  centeredView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 22
+  },
+  modalView: {
+    margin: 20,
+    borderRadius: 20,
+    padding:30,
+    alignItems: "center",
+    backgroundColor: '#8EBFBF',  // Cor de fundo do modal
+    borderWidth: 4  ,              // Espessura da borda
+    borderColor: '#000',         // Cor da borda
+  },
+  
+  modalText: {
+    fontSize:24,
+    textAlign: "center",
+    color: '#fff', 
+    fontSize: 30  
+  },
+  button: { 
+    fontSize: 20,   
+    marginTop:30,
+    borderRadius: 10,
+    padding: 15,
+    width:250
+  },
+  buttonClose: {
+    backgroundColor: "#000"
+  },
+  
+  textStyle: {      
+    fontSize: 20,
+    color: "white",
+    fontWeight: "bold",
+    textAlign: "center"
+  }
+  
 })
