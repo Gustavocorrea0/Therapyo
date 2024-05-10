@@ -1,3 +1,5 @@
+//styleRelatorio.js
+
 import { StyleSheet } from "react-native";
 
 export default styles = StyleSheet.create({
@@ -85,8 +87,7 @@ export default styles = StyleSheet.create({
     marginTop: 27,
     marginLeft: 220,
     borderRadius: 10,
-    alignItems: 'center',
-    
+    alignItems: 'center'
   },
 
   botaoCinco: {
@@ -123,7 +124,43 @@ export default styles = StyleSheet.create({
   formatacaoEmoji: {
     height: 80,
     width: 80,
-    marginTop: 10
-  }
+    marginTop: 10,
+    
+  },
 
+  listaHumor: { 
+    paddingHorizontal: 20 ,
+    alignItems:'center',
+  },
+  
+
+  itemHumor: {
+    flexDirection: 'row', 
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 10,
+    backgroundColor: '#ccc',
+    marginBottom: 10, 
+    width:350,
+      },
+
+    
+
+  textDia: { 
+    fontSize: 16 
+  },
+
+  textHumor: { 
+    fontSize: 16 
+  },
+
+  pickerStyle: {
+    height: 50,
+    width: 150,
+    marginBottom:10,
+    marginTop:10
+  },
+ 
 })
+
+ 
