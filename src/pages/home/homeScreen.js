@@ -43,7 +43,10 @@ function HomeScreen({ navigation }) {
           />
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.botaoQuatro} onPress={() => {}}>
+        <TouchableOpacity 
+          style={styles.botaoQuatro} 
+          onPress={() => navigation.navigate('RelatorioHumor')}
+        >
           <Text style={styles.tituloBotoes}>Relatório de humor</Text>
           <Image
             source={require('../../assets/icons/smile.png')}

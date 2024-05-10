@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { SafeAreaView, Text, View, TouchableOpacity, Image, ScrollView, Modal } from 'react-native';
+import { StyleSheet,SafeAreaView, Text, View, TouchableOpacity, Image, ScrollView, Modal } from 'react-native';
 import styles from './styleHumorDiario'; // Importando o estilo que você forneceu
+import BackButton from '../../componentes/BackButton';  // Verifique o caminho se está correto
 
 export default function HumorDiario() {
   const [selectedHumor, setSelectedHumor] = useState(null);
@@ -16,8 +17,13 @@ export default function HumorDiario() {
 
   return (
     <SafeAreaView style={styles.container}>
+       
       <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }} showsVerticalScrollIndicator={false}>
+      <View style={absoluteStyle.backButtonContainer}>
+        <BackButton />
+      </View>
         <View style={styles.containerTopo}>
+          
           <Text style={styles.tituloTherapyo}>Therapyo</Text>
         </View>
 
@@ -69,7 +75,14 @@ export default function HumorDiario() {
     </SafeAreaView>
   );
 }
-
+const absoluteStyle = StyleSheet.create({
+  backButtonContainer: {
+    position: 'absolute',
+    top: 8,  // Leve ajuste para garantir visibilidade
+    left: 10,
+    zIndex: 1000
+  }
+});
 const humorIcons = [
   { label: 'Feliz', image: require('../../assets/icons/smile.png'), bgColor: '#FFFF00' },
   { label: 'Com Raiva', image: require('../../assets/icons/smile.png'), bgColor: '#FF0000' },
