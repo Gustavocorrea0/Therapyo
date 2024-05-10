@@ -15,7 +15,6 @@ const humorIcons = [
 export default function HumorDiario() {
   const [selectedHumor, setSelectedHumor] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
-  const [humorInMemory, setHumorInMemory] = useState([]);
 
   const selectHumor = (index) => {
     setSelectedHumor(index);
@@ -26,16 +25,16 @@ export default function HumorDiario() {
       if (selectedHumor !== null && selectedHumor < humorIcons.length) {
         const selectedHumorKey = humorIcons[selectedHumor].key;
         
-        const humorHistory = await AsyncStorage.getItem('humorHistory');
-        const arrayHumors = humorHistory ? JSON.parse(humorHistory) : [];
+        const humorHistory = await AsyncStorage.getItem('humorHistory'); // GUARDA O HISTORICO DE DADOS
+        const arrayHumors = humorHistory ? JSON.parse(humorHistory) : []; // ARRAY DE HUMOR
 
         arrayHumors.push(selectedHumorKey);
 
-        await AsyncStorage.setItem('humorHistory', JSON.stringify(arrayHumors)); // SALVA O DADO
-        
-        setModalVisible(true);
+        await AsyncStorage.setItem('humorHistory', JSON.stringify(arrayHumors)); // SALVA O DADO NO ARRAY E NO ASYNC STORAGE
+        setModalVisible(true); //
         console.log('CADASTRO OK');
-
+      
+        // LISTAGEM DE HUMOR SALVO
         console.log('Humor(es) cadastrados');
         arrayHumors.forEach((humor, index) => {
           console.log(`${index + 1}: ${humor}`);
