@@ -1,4 +1,4 @@
-> APP Therapyo - 2024
+### APP Therapyo - 2024
 
 > Equipe de Desenvolvimento:
 
@@ -11,5 +11,5 @@
 
 > Liguagem e Banco de Dados:
 
-    Linguagem de Programação: Reac Native(JavaScript)
+    Linguagem de Programação: React Native(JavaScript)
     Banco de dados: local(dispositivo)
