@@ -85,7 +85,8 @@ export default styles = StyleSheet.create({
     marginTop: 27,
     marginLeft: 220,
     borderRadius: 10,
-    alignItems: 'center'
+    alignItems: 'center',
+    
   },
 
   botaoCinco: {
