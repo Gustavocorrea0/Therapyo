@@ -4,7 +4,7 @@ import styles from './styleRelatorioHumor';
 import BackButton from '../../componentes/BackButton';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { Image } from 'react-native';
-import Footer from '../../componentes/footer.js'; 
+
 const data = [
   { dia: "SEG", humor: "Calmo", icone: require('../../assets/icons/calmo.png'), corDeFundo: '#04448E'},
   { dia: "TER", humor: "Ansioso", icone: require('../../assets/icons/ancioso.png'), corDeFundo: '#278425' },
@@ -72,9 +72,11 @@ function RelatorioHumor() {
               </View>
             ))}
       </View>
-      <Footer />
-        </View>       
-      </ScrollView>      
+      
+        </View>     
+       
+      </ScrollView>   
+         
     </SafeAreaView>
     
   );

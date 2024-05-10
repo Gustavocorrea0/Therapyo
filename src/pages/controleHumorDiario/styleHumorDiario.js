@@ -7,11 +7,11 @@ export default styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginTop:40,
-    zIndex: 1000
+    
   },
 
   containerBranco: {
-    width: '100%',
+    width: 410,
     height: '90%',
     backgroundColor: '#FFFFFF',
     marginTop: 20,
