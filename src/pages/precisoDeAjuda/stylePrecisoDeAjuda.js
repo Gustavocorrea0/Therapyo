@@ -6,6 +6,7 @@ export default styles = StyleSheet.create({
         backgroundColor: '#126EA1',
         alignItems: 'center',
         justifyContent: 'center',
+        marginTop: 40,
     },
 
     containerBranco: {
@@ -28,8 +29,9 @@ export default styles = StyleSheet.create({
     tituloTherapyo: {
         fontSize: 27,
         color: "#FFFFFF",
-        marginTop: 50,
-        fontWeight: 'bold'
+        marginTop: 60,
+        fontWeight: 'bold',
+        
     },
 
     tituloPagina: {
@@ -59,7 +61,7 @@ export default styles = StyleSheet.create({
         borderRadius: 10,
         alignItems: 'center',
         textAlignVertical: 'center',
-        elevation: 5,
+       // elevation: 5, // sombra mas ta meio zoado quando segura o botão :v - sla
 
 
     }

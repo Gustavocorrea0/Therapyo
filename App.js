@@ -5,6 +5,7 @@ import HumorDiario from './src/pages/controleHumorDiario/humorDiario'; // Caminh
 import HomeScreen from './src/pages/home/homeScreen'; // Importe o cocmponente HomeScreen do arquivo App.js
 import PrecisoDeAjudaScreen from './src/pages/precisoDeAjuda/precisoDeAjudaScreen';
 import RelatorioHumor from './src/pages/relatorioHumor/RelatorioHumor';
+import CriseDeAnsiedadeScreen from './src/pages/precisoDeAjuda/criseDeAnsiedade/criseDeAnsiedade';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +20,7 @@ function App() {
         <Stack.Screen name="HumorDiario" component={HumorDiario} />
         <Stack.Screen name="RelatorioHumor" component={RelatorioHumor} />
         <Stack.Screen name="PrecisoDeAjuda" component={PrecisoDeAjudaScreen} />
+        <Stack.Screen name="CriseDeAnsiedade" component={CriseDeAnsiedadeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
