@@ -8,7 +8,7 @@ export default styles = StyleSheet.create({
     backgroundColor: '#126EA1',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 40,
+    marginTop: 40
   },
 
   containerBranco: {

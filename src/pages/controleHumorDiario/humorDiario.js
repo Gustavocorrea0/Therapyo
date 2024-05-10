@@ -2,7 +2,7 @@
   import { StyleSheet,SafeAreaView, Text, View, TouchableOpacity, Image, ScrollView, Modal } from 'react-native';
   import styles from './styleHumorDiario'; // Importando o estilo que você forneceu
   import BackButton from '../../componentes/BackButton';  // Verifique o caminho se está correto
-  import Footer from '../../componentes/footer.js'; 
+  
   export default function HumorDiario() {
     const [selectedHumor, setSelectedHumor] = useState(null);
     const [modalVisible, setModalVisible] = useState(false);
@@ -51,7 +51,7 @@
             </TouchableOpacity>
 
           </View>
-          <Footer />
+          
           </ScrollView>
               
         {/* Modal */}
