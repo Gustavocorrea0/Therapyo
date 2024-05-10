@@ -23,7 +23,7 @@ export default styles = StyleSheet.create({
 
   containerTopo: {
     width: '100%',
-    height: 100,
+    height: 70,
     backgroundColor: '#09B5EB',
     alignItems: 'center'
   },
@@ -31,7 +31,7 @@ export default styles = StyleSheet.create({
   tituloTherapyo: {
     fontSize: 27,
     color: "#FFFFFF",
-    marginTop: 55,
+    marginTop: 25,
     fontWeight: 'bold'
   },
 
@@ -111,7 +111,8 @@ export default styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginTop: 10
+    marginTop: 10,
+    marginBottom: -50
   },
 
   formatacaoEmojiRelatorio: {
@@ -129,7 +130,7 @@ export default styles = StyleSheet.create({
   },
 
   listaHumor: { 
-    paddingHorizontal: 20 ,
+    padding: 10 ,
     alignItems:'center',
   },
   
@@ -138,7 +139,7 @@ export default styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',  // Centraliza verticalmente os itens dentro da row
-    padding: 10,
+    padding: 30,
     backgroundColor: '#ccc',
     marginBottom: 10,
     paddingHorizontal: 20, // Adiciona espaço horizontal para evitar que os textos e ícones fiquem muito juntos

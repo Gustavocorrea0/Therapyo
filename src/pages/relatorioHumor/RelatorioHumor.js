@@ -4,15 +4,15 @@ import styles from './styleRelatorioHumor';
 import BackButton from '../../componentes/BackButton';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { Image } from 'react-native';
-
+import Footer from '../../componentes/footer.js'; 
 const data = [
-  { dia: "SEG", humor: "Calmo", icone: require('../../assets/icons/calmo.png'), corDeFundo: '#AED581' },
-  { dia: "TER", humor: "Ansioso", icone: require('../../assets/icons/ancioso.png'), corDeFundo: '#FFCDD2' },
-  { dia: "QUA", humor: "Feliz", icone: require('../../assets/icons/smile.png'), corDeFundo: '#FFF176' },
-  { dia: "QUI", humor: "Com raiva", icone: require('../../assets/icons/angry.png'), corDeFundo: '#E57373' },
-  { dia: "SEX", humor: "Feliz", icone: require('../../assets/icons/smile.png'), corDeFundo: '#FFF176' },
-  { dia: "SAB", humor: "Feliz", icone: require('../../assets/icons/smile.png'), corDeFundo: '#FFF176' },
-  { dia: "DOM", humor: "Calmo", icone: require('../../assets/icons/calmo.png'), corDeFundo: '#AED581' },
+  { dia: "SEG", humor: "Calmo", icone: require('../../assets/icons/calmo.png'), corDeFundo: '#04448E'},
+  { dia: "TER", humor: "Ansioso", icone: require('../../assets/icons/ancioso.png'), corDeFundo: '#278425' },
+  { dia: "QUA", humor: "Feliz", icone: require('../../assets/icons/smile.png'), corDeFundo: '#FFD700' },
+  { dia: "QUI", humor: "Com raiva", icone: require('../../assets/icons/angry.png'), corDeFundo: '#FF0000' },
+  { dia: "SEX", humor: "Feliz", icone: require('../../assets/icons/smile.png'), corDeFundo: '#FFD700' },
+  { dia: "SAB", humor: "Feliz", icone: require('../../assets/icons/smile.png'), corDeFundo: '#FFD700' },
+  { dia: "DOM", humor: "Calmo", icone: require('../../assets/icons/calmo.png'), corDeFundo: '#278425' },
 ];
 
 
@@ -67,14 +67,16 @@ function RelatorioHumor() {
             {data.map((item, index) => (
               <View key={index} style={[styles.itemHumor, ]}>
                 <Text style={styles.textDia}>{item.dia}</Text>
-                <Image source={item.icone} style={{ width: 30, height: 30 ,backgroundColor: item.corDeFundo }} resizeMode="contain" />
+                <Image source={item.icone} style={{ margin:-20,width: 100, height: 100 ,backgroundColor: item.corDeFundo }} resizeMode="contain" />
                 <Text style={styles.textHumor}>{item.humor}</Text>
               </View>
             ))}
       </View>
-        </View>
-      </ScrollView>
+      <Footer />
+        </View>       
+      </ScrollView>      
     </SafeAreaView>
+    
   );
 }
 

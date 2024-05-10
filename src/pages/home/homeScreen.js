@@ -1,7 +1,7 @@
 import React from 'react';
 import { SafeAreaView, Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
 import styles from './styleHome';
-
+import Footer from '../../componentes/footer.js'; 
 function HomeScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
