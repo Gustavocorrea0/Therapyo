@@ -135,23 +135,24 @@ export default styles = StyleSheet.create({
   
 
   itemHumor: {
-    flexDirection: 'row', 
+    flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
+    alignItems: 'center',  // Centraliza verticalmente os itens dentro da row
     padding: 10,
     backgroundColor: '#ccc',
-    marginBottom: 10, 
-    width:350,
-      },
-
-    
-
-  textDia: { 
-    fontSize: 16 
+    marginBottom: 10,
+    paddingHorizontal: 20, // Adiciona espaço horizontal para evitar que os textos e ícones fiquem muito juntos
+    width: 350, // Certifique-se de que essa largura se encaixa bem no seu layout
   },
-
-  textHumor: { 
-    fontSize: 16 
+  textDia: {
+    flex: 1, // Ocupa 1/3 do espaço disponível
+    fontSize: 16,
+    textAlign: 'left' // Alinha o texto à esquerda
+  },
+  textHumor: {
+    flex: 1, // Ocupa 1/3 do espaço disponível
+    fontSize: 16,
+    textAlign: 'right' // Alinha o texto à direita
   },
 
   pickerStyle: {
