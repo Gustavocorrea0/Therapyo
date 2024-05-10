@@ -1,17 +1,19 @@
+//styleRelatorio.js
+
 import { StyleSheet } from "react-native";
 
 export default styles = StyleSheet.create({
-
   container: {
     flex: 1,
     backgroundColor: '#126EA1',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: 40,
   },
 
   containerBranco: {
-    width: '100%',
-    height: '85%',
+    width: 410,
+    height: '90%',
     backgroundColor: '#FFFFFF',
     marginTop: 20,
     borderTopLeftRadius: 50,
@@ -21,20 +23,20 @@ export default styles = StyleSheet.create({
 
   containerTopo: {
     width: '100%',
-    height: 100,
+    height: 70,
     backgroundColor: '#09B5EB',
     alignItems: 'center'
   },
 
   tituloTherapyo: {
-    fontFamily: '',
     fontSize: 27,
     color: "#FFFFFF",
-    marginTop: 50,
+    marginTop: 25,
     fontWeight: 'bold'
   },
 
   tituloPagina: {
+    textAlign: 'center',
     fontSize: 35,
     color: "#FFFFFF",
     marginTop: 15,
@@ -42,7 +44,6 @@ export default styles = StyleSheet.create({
   },
 
   tituloContainerBranco: {
-    fontFamily: 'OpenSans_700Bold', // CORRIGIR FALHA DE FONTE
     fontSize: 25,
     color: '#000000',
     fontWeight: 'bold',
@@ -110,7 +111,8 @@ export default styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginTop: 10
+    marginTop: 10,
+    marginBottom: -50
   },
 
   formatacaoEmojiRelatorio: {
@@ -123,7 +125,44 @@ export default styles = StyleSheet.create({
   formatacaoEmoji: {
     height: 80,
     width: 80,
-    marginTop: 10
-  }
+    marginTop: 10,
+    
+  },
 
+  listaHumor: { 
+    padding: 10 ,
+    alignItems:'center',
+  },
+  
+
+  itemHumor: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',  // Centraliza verticalmente os itens dentro da row
+    padding: 30,
+    backgroundColor: '#ccc',
+    marginBottom: 10,
+    paddingHorizontal: 20, // Adiciona espaço horizontal para evitar que os textos e ícones fiquem muito juntos
+    width: 350, // Certifique-se de que essa largura se encaixa bem no seu layout
+  },
+  textDia: {
+    flex: 1, // Ocupa 1/3 do espaço disponível
+    fontSize: 16,
+    textAlign: 'left' // Alinha o texto à esquerda
+  },
+  textHumor: {
+    flex: 1, // Ocupa 1/3 do espaço disponível
+    fontSize: 16,
+    textAlign: 'right' // Alinha o texto à direita
+  },
+
+  pickerStyle: {
+    height: 50,
+    width: 150,
+    marginBottom:10,
+    marginTop:10
+  },
+ 
 })
+
+ 

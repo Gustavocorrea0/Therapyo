@@ -6,6 +6,7 @@ export default styles = StyleSheet.create({
     backgroundColor: '#126EA1',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: 40,
   },
 
   containerBranco: {
@@ -28,7 +29,7 @@ export default styles = StyleSheet.create({
   tituloTherapyo: {
     fontSize: 27,
     color: "#FFFFFF",
-    marginTop: 50,
+    marginTop: 55,
     fontWeight: 'bold'
   },
 
@@ -84,7 +85,8 @@ export default styles = StyleSheet.create({
     marginTop: 27,
     marginLeft: 220,
     borderRadius: 10,
-    alignItems: 'center'
+    alignItems: 'center',
+    
   },
 
   botaoCinco: {
