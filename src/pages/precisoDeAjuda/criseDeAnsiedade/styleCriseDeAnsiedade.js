@@ -10,7 +10,7 @@ export default styles = StyleSheet.create({
 
   containerBranco: {
     width: 410,
-    height: '90%',
+    height: '100%',
     backgroundColor: '#FFFFFF',
     marginTop: 20,
     borderTopLeftRadius: 50,

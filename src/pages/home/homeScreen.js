@@ -22,15 +22,15 @@ function HomeScreen({ navigation }) {
           >
             <Text style={styles.tituloBotoes}>Adicionar meu humor diário</Text>
             <Image
-              source={require('../../assets/icons/smile.png')}
+              source={require('../../assets/icons/happy.png')}
               style={styles.formatacaoEmoji}
             />
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.botaoDois} onPress={() => { }}>
+          <TouchableOpacity style={styles.botaoDois} onPress={() => { navigation.navigate('DicasDeSaude') }}>
             <Text style={styles.tituloBotoes}>Dicas sobre saúde</Text>
             <Image
-              source={require('../../assets/icons/doctor.png')}
+              source={require('../../assets/icons/sick.png')}
               style={styles.formatacaoEmoji}
             />
           </TouchableOpacity>
@@ -39,7 +39,7 @@ function HomeScreen({ navigation }) {
             onPress={() => navigation.navigate('PrecisoDeAjuda')}>
             <Text style={styles.tituloBotoes}>Preciso de{'\n'}ajuda</Text>
             <Image
-              source={require('../../assets/icons/fever.png')}
+              source={require('../../assets/icons/hurted.png')}
               style={styles.formatacaoEmoji}
             />
           </TouchableOpacity>
@@ -50,12 +50,12 @@ function HomeScreen({ navigation }) {
           >
             <Text style={styles.tituloBotoes}>Relatório de humor</Text>
             <Image
-              source={require('../../assets/icons/smile.png')}
-              style={styles.formatacaoEmojiRelatorio}
+              source={require('../../assets/icons/report.png')}
+              style={styles.formatacaoEmoji}
             />
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.botaoCinco} onPress={() => { }}>
+          <TouchableOpacity style={styles.botaoCinco} onPress={() => { navigation.navigate('ClinicasParaAjuda') }}>
             <Text style={styles.tituloBotaoClinica}>Clínicas para ajuda psicológica</Text>
             <Image
               source={require('../../assets/icons/hospital.png')}

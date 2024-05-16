@@ -102,6 +102,7 @@ export default styles = StyleSheet.create({
   },
 
   tituloBotoes: {
+    color: '#FFFFFF',
     fontSize: 23,
     fontWeight: 'bold',
     textAlign: 'center',

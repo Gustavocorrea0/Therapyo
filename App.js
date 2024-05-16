@@ -6,6 +6,8 @@ import HomeScreen from './src/pages/home/homeScreen'; // Importe o cocmponente H
 import PrecisoDeAjudaScreen from './src/pages/precisoDeAjuda/precisoDeAjudaScreen';
 import RelatorioHumor from './src/pages/relatorioHumor/RelatorioHumor';
 import CriseDeAnsiedadeScreen from './src/pages/precisoDeAjuda/criseDeAnsiedade/criseDeAnsiedade';
+import ClinicasParaAjudaPsicologica from './src/pages/clinicasParaAjudaPsicologica/clinicasParaAjuda'
+import DicasSobreSaude from './src/pages/dicasSobreSaude/dicasSobreSaude'
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +23,8 @@ function App() {
         <Stack.Screen name="RelatorioHumor" component={RelatorioHumor} />
         <Stack.Screen name="PrecisoDeAjuda" component={PrecisoDeAjudaScreen} />
         <Stack.Screen name="CriseDeAnsiedade" component={CriseDeAnsiedadeScreen} />
+        <Stack.Screen name="ClinicasParaAjuda" component={ClinicasParaAjudaPsicologica} />
+        <Stack.Screen name="DicasDeSaude" component={DicasSobreSaude} />
       </Stack.Navigator>
     </NavigationContainer>
   );

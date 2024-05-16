@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet,SafeAreaView, Text, View, TouchableOpacity, Image, ScrollView, Modal } from 'react-native';
 import styles from './styleHumorDiario'; // Importando o estilo que você forneceu
-import BackButton from '../../componentes/BackButton';  // Verifique o caminho se está correto
+import BackButton from '../../components/BackButton';  // Verifique o caminho se está correto
 
 export default function HumorDiario() {
   const [selectedHumor, setSelectedHumor] = useState(null);
@@ -37,7 +37,7 @@ export default function HumorDiario() {
             {humorIcons.map((icon, index) => (
               <TouchableOpacity
                 key={index}
-                style={[styles.botaoUm, { backgroundColor: icon.bgColor, marginLeft: 10, marginRight: 10, marginTop: 20, borderWidth: selectedHumor === index ? 3 : 0, borderColor: 'blue' }]}
+                style={[styles.botaoUm, { backgroundColor: icon.bgColor, marginLeft: 10, marginRight: 10, marginTop: 20, borderWidth: selectedHumor === index ? 8 : 0, borderColor: '#8FCAC3' }]}
                 onPress={() => selectHumor(index)}
               >
                 <Image source={icon.image} style={styles.formatacaoEmoji} />
@@ -87,10 +87,10 @@ const absoluteStyle = StyleSheet.create({
   }
 });
 const humorIcons = [
-  { label: 'Feliz', image: require('../../assets/icons/smile.png'), bgColor: '#FFFF00' },
-  { label: 'Com Raiva', image: require('../../assets/icons/smile.png'), bgColor: '#FF0000' },
-  { label: 'Triste', image: require('../../assets/icons/smile.png'), bgColor: '#0000CD' },
+  { label: 'Feliz', image: require('../../assets/icons/laughing.png'), bgColor: '#FFB800' },
+  { label: 'Com Raiva', image: require('../../assets/icons/angry-face.png'), bgColor: '#8F0000' },
+  { label: 'Triste', image: require('../../assets/icons/depressed.png'), bgColor: '#032162' },
   { label: 'Calmo', image: require('../../assets/icons/smile.png'), bgColor: '#6495ED' },
-  { label: 'Ansioso', image: require('../../assets/icons/smile.png'), bgColor: '#008000' },
-  { label: 'Com Medo', image: require('../../assets/icons/smile.png'), bgColor: '#4B0082' },
+  { label: 'Ansioso', image: require('../../assets/icons/unhappy.png'), bgColor: '#008000' },
+  { label: 'Com Medo', image: require('../../assets/icons/upset.png'), bgColor: '#4B0082' },
 ];
