@@ -1,0 +1,2 @@
+1 - Cadastro de Humor:
+    > Armazene a label do humor selecionado e use essa label como chave única baseada na data

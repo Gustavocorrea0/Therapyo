@@ -3,3 +3,4 @@ fonte open sans: npx expo install expo-font @expo-google-fonts/open-sans
 navegacao: npm install @react-navigation/native
 npm install @react-navigation/native-stack
 Async storage: npx expo install @react-native-async-storage/async-storage
+Navigatio: npm install @react-navigation/bottom-tabs

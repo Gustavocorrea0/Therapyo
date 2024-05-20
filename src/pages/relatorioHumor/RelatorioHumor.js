@@ -36,9 +36,6 @@ function RelatorioHumor() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }} showsVerticalScrollIndicator={false}>
-        <View style={absoluteStyle.backButtonContainer}>
-          <BackButton />
-        </View>
         <View style={styles.containerTopo}>
           <Text style={styles.tituloTherapyo}>Therapyo</Text>
         </View>
