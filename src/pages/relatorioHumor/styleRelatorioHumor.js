@@ -43,117 +43,38 @@ export default styles = StyleSheet.create({
     fontWeight: 'bold'
   },
 
-  tituloContainerBranco: {
-    fontSize: 25,
-    color: '#000000',
-    fontWeight: 'bold',
-    marginTop: 20
-  },
-
-  botaoUm: {
-    width: 175,
-    height: 175,
-    backgroundColor: '#8996C7',
-    marginTop: 30,
-    marginLeft: -220,
-    borderRadius: 10,
-    alignItems: 'center'
-  },
-
-  botaoDois: {
-    width: 175,
-    height: 175,
-    backgroundColor: '#77D6E3',
-    marginTop: 25,
-    marginLeft: -220,
-    borderRadius: 10,
-    alignItems: 'center'
-  },
-
-  botaoTres: {
-    width: 175,
-    height: 175,
-    backgroundColor: '#D5AD51',
-    marginTop: -375,
-    marginLeft: 220,
-    borderRadius: 10,
-    alignItems: 'center'
-  },
-
-  botaoQuatro: {
-    width: 175,
-    height: 175,
-    backgroundColor: '#96D863',
-    marginTop: 27,
-    marginLeft: 220,
-    borderRadius: 10,
-    alignItems: 'center'
-  },
-
-  botaoCinco: {
-    width: 175,
-    height: 175,
-    backgroundColor: '#EDC868',
-    marginTop: 20,
-    marginLeft: 0,
-    borderRadius: 10,
-    alignItems: 'center',
-  },
-
-  tituloBotoes: {
-    fontSize: 23,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginTop: 10
-  },
-
-  tituloBotaoClinica: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginTop: 10,
-    marginBottom: -50
-  },
-
-  formatacaoEmojiRelatorio: {
-    height: 90,
-    width: 90,
-    marginLeft: 10,
-    marginTop: 5
-  },
-
-  formatacaoEmoji: {
-    height: 80,
-    width: 80,
-    marginTop: 10,
-    
-  },
-
   listaHumor: { 
     padding: 10 ,
     alignItems:'center',
   },
   
-
   itemHumor: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',  // Centraliza verticalmente os itens dentro da row
+    alignItems: 'center',
     padding: 30,
-    backgroundColor: '#ccc',
+    backgroundColor: '#363636',
     marginBottom: 10,
-    paddingHorizontal: 20, // Adiciona espaço horizontal para evitar que os textos e ícones fiquem muito juntos
-    width: 350, // Certifique-se de que essa largura se encaixa bem no seu layout
+    paddingHorizontal: 20, 
+    width: 350, 
+    height: 80
   },
+
   textDia: {
-    flex: 1, // Ocupa 1/3 do espaço disponível
+    flex: 1,
+    fontWeight: 'bold',
+    color: "#FFFFFF",
     fontSize: 16,
-    textAlign: 'left' // Alinha o texto à esquerda
+    textAlign: 'left',
   },
+
   textHumor: {
-    flex: 1, // Ocupa 1/3 do espaço disponível
     fontSize: 16,
-    textAlign: 'right' // Alinha o texto à direita
+    color: "#FFFFFF",
+    fontWeight: 'bold',
+    flex: 1, 
+    fontSize: 16,
+    textAlign: 'right'
   },
 
   pickerStyle: {

@@ -18,6 +18,7 @@ export const getData = async (key) => {
     }
 };
 
+/*
 export const addDailyHumor = async (date, humor) => {
     try {
         const key = `humor_${date}_${new Date().getTime()}`;
@@ -27,6 +28,7 @@ export const addDailyHumor = async (date, humor) => {
         console.log("Erro ao adicionar humor diario:", e);
     }
 };
+*/
 
 export const getDailyHumor = async (date) => {
     try {
@@ -46,5 +48,54 @@ export const getAllHumors = async () => {
     } catch (e) {
         console.log("Erro ao obter todos os humores:", e);
         return [];
+    }
+};
+
+
+// GARANTIR QUE PROXIMO HUMOR SEJA LANCADO EM 24 HORAS
+
+export const setLastHumorDate = async (date) => {
+    try {
+        await AsyncStorage.setItem('lastHumorDate', date);
+    } catch (e) {
+        console.log("Erro setLastHumorDate tipo: ", e);
+    }
+};
+
+export const getLastHumorDate = async () => {
+    try {
+        const lastHumorDate = await AsyncStorage.getItem('lastHumorDate');
+        return lastHumorDate != null ? new Date(lastHumorDate) : null;
+    } catch (e) {
+        console.log("Erro getLastHumor tipo: ", e)
+        return null;
+    }
+};
+
+export const canAddDailyHumor = async () => {
+    const lastHumorDate = await getLastHumorDate();
+    if (lastHumorDate === null) {
+        return true; 
+    }
+    
+    const currentTime = new Date();
+    const diffInMs = currentTime - lastHumorDate;
+    const diffInHours = diffInMs / (1000 * 60 * 60); 
+    
+    return diffInHours >= 24;
+};
+
+export const addDailyHumor = async (date, humor) => {
+    try {
+        if (await canAddDailyHumor()) {
+            const key = `humor_${date}_${new Date().getTime()}`;
+            await storageHumor(key, humor);
+            await setLastHumorDate(new Date().toISOString());
+            console.log('Humor adicionado com sucesso');
+        } else {
+            alert('Usuário já lançou um humor nas últimas 24 horas');
+        }
+    } catch (e) {
+        console.log("Erro ao adicionar humor diario:", e);
     }
 };

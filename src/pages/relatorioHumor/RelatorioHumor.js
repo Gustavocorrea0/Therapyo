@@ -1,19 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SafeAreaView, Text, View, ScrollView, StyleSheet } from 'react-native';
-import styles from './styleRelatorioHumor';
-import BackButton from '../../components/BackButton';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { Image } from 'react-native';
-
-const data = [
-  { dia: "SEG", humor: "Calmo", icone: require('../../assets/icons/smile.png'), corDeFundo: '#6495ED' },
-  { dia: "TER", humor: "Ansioso", icone: require('../../assets/icons/unhappy.png'), corDeFundo: '#008000' },
-  { dia: "QUA", humor: "Feliz", icone: require('../../assets/icons/laughing.png'), corDeFundo: '#FFB800' },
-  { dia: "QUI", humor: "Com raiva", icone: require('../../assets/icons/angry-face.png'), corDeFundo: '#8F0000' },
-  { dia: "SEX", humor: "Feliz", icone: require('../../assets/icons/laughing.png'), corDeFundo: '#FFB800' },
-  { dia: "SAB", humor: "Feliz", icone: require('../../assets/icons/laughing.png'), corDeFundo: '#FFB800' },
-  { dia: "DOM", humor: "Calmo", icone: require('../../assets/icons/smile.png'), corDeFundo: '#6495ED' },
-];
+import { getAllHumors } from '../../storage/storage';
+import styles from './styleRelatorioHumor'
+import { format } from 'date-fns';
 
 const humorIcons = [
   { label: 'Feliz', image: require('../../assets/icons/laughing.png'), bgColor: '#FFB800' },
@@ -31,14 +22,29 @@ function RelatorioHumor() {
     { label: 'Semana', value: 'semana' },
     { label: 'Mês', value: 'mes' }
   ]);
+  const [humors, setHumors] = useState([]);
 
+  useEffect(() => {
+    async function loadHumors() {
+      const storedHumors = await getAllHumors();
+      setHumors(storedHumors);
+    }
+
+    loadHumors();
+  }, []);
+
+  const filteredHumors = selectedPeriod === 'semana' ?
+    humors.filter(humor => {
+      const date = new Date(humor.date);
+      const today = new Date();
+      return date.getDay() === today.getDay() ||
+        date.getDay() === today.getDay() - 1; 
+    }) :
+    humors;
 
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }} showsVerticalScrollIndicator={false}>
-        <View style={styles.containerTopo}>
-          <Text style={styles.tituloTherapyo}>Therapyo</Text>
-        </View>
         <Text style={styles.tituloPagina}>Relatório de Humor</Text>
         <View style={styles.containerBranco}>
           <DropDownPicker
@@ -51,7 +57,7 @@ function RelatorioHumor() {
             style={{
               borderRadius: 0,
               alignItems: 'center',
-              alignSelf: 'center', // Isso centraliza o picker no container
+              alignSelf: 'center',
               backgroundColor: '#000',
               height: 50,
               width: 200,
@@ -61,39 +67,28 @@ function RelatorioHumor() {
             dropDownContainerStyle={{
               borderRadius: 0,
               backgroundColor: '#000',
-              width: 200, // Garante que o container do dropdown tem a mesma largura do picker
-              alignSelf: 'center' // Garante que o dropdown também esteja centralizado
+              width: 200,
+              alignSelf: 'center'
             }}
             textStyle={{
               color: '#fff'
             }}
           />
           <View style={styles.listaHumor}>
-            {data.map((item, index) => (
+            {filteredHumors.map((item, index) => (
               <View key={index} style={[styles.itemHumor]}>
-                <Text style={styles.textDia}>{item.dia}</Text>
-                <Image source={item.icone} style={{ margin: -20, width: 90, height: 90, backgroundColor: item.corDeFundo }} resizeMode="contain" />
+                <Text style={styles.textDia}>{item.date}</Text>
+                <Image source={humorIcons.find(icon => icon.label === item.humor).image} 
+                style={{ margin: -20, width: 75, height: 75, 
+                backgroundColor: humorIcons.find(icon => icon.label === item.humor).bgColor }} resizeMode="contain" />
                 <Text style={styles.textHumor}>{item.humor}</Text>
               </View>
             ))}
           </View>
-
         </View>
-
       </ScrollView>
-
     </SafeAreaView>
-
   );
 }
-
-const absoluteStyle = StyleSheet.create({
-  backButtonContainer: {
-    position: 'absolute',
-    top: 8,
-    left: 10,
-    zIndex: 1000
-  }
-});
 
 export default RelatorioHumor;
