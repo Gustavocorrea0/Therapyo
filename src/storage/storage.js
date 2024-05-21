@@ -75,15 +75,16 @@ export const getLastHumorDate = async () => {
 export const canAddDailyHumor = async () => {
     const lastHumorDate = await getLastHumorDate();
     if (lastHumorDate === null) {
-        return true; 
+        return true;
     }
-    
+
     const currentTime = new Date();
     const diffInMs = currentTime - lastHumorDate;
-    const diffInHours = diffInMs / (1000 * 60 * 60); 
-    
+    const diffInHours = diffInMs / (1000 * 60 * 60);
+
     return diffInHours >= 24;
 };
+
 
 export const addDailyHumor = async (date, humor) => {
     try {
@@ -92,10 +93,22 @@ export const addDailyHumor = async (date, humor) => {
             await storageHumor(key, humor);
             await setLastHumorDate(new Date().toISOString());
             console.log('Humor adicionado com sucesso');
+            return true
         } else {
-            alert('Usuário já lançou um humor nas últimas 24 horas');
+            return false
         }
     } catch (e) {
         console.log("Erro ao adicionar humor diario:", e);
     }
 };
+
+
+// LIMPAR MEMORIA
+export const clearAsyncStorage = async () => {
+    try {
+        await AsyncStorage.clear();
+        alert('O historico foi limpo')
+    } catch (e) {
+        console.log("Erro ao limpar memoria:", e);
+    }
+}

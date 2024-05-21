@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from "@expo/vector-icons";
 
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Image } from 'react-native';
 
 import DicasSobreSaude from './dicasSobreSaude/dicasSobreSaude';
 import PrecisoDeAjudaScreen from './precisoDeAjuda/precisoDeAjudaScreen';
@@ -25,30 +25,21 @@ export function Routes() {
                         borderTopWidth: 0,
                         bottom: 0
                     },
-                }}
-
-                tabBarOptions={{
-                    activeTintColor: 'white', // Cor do texto quando o item está selecionado
-                    inactiveTintColor: '#A9A9A9', // Cor do texto quando o item não está selecionado
+                    tabBarActiveTintColor: 'white',
+                    tabBarInactiveTintColor: '#A9A9A9'
                 }}>
 
                 <Tab.Screen
                     name='Inicio'
                     component={DicasSobreSaude}
                     options={{
-                        tabBarShowLabel: true,
                         headerShown: false,
-                        tabBarIcon: ({ focused, size, color }) => {
-                            if (focused) {
-                                //return <Ionicons size={size} color={focused ? 'white' : 'gray'} name="search" />
-                                return (
-                                    <Image
-                                        source={focused ? require('../assets/icons/tabBarIcons/home.png') : require('../assets/icons/tabBarIcons/home.png')}
-                                        style={styleRoutes.iconTabBar}
-                                    />
-                                );
-                            }
-                        }
+                        tabBarIcon: ({ focused }) => (
+                            <Image
+                                source={require('../assets/icons/tabBarIcons/home.png')}
+                                style={[styleRoutes.iconTabBar, { tintColor: focused ? 'white' : 'gray' }]}
+                            />
+                        )
                     }}
                 />
 
@@ -56,18 +47,13 @@ export function Routes() {
                     name='Clinicas'
                     component={ClinicasParaAjudaPsicologica}
                     options={{
-                        tabBarShowLabel: true,
                         headerShown: false,
-                        tabBarIcon: ({ focused, size, color }) => {
-                            if (focused) {
-                                return (
-                                    <Image
-                                        source={focused ? require('../assets/icons/tabBarIcons/map-marker.png') : require('../assets/icons/tabBarIcons/map-marker.png')}
-                                        style={styleRoutes.iconTabBar}
-                                    />
-                                );
-                            }
-                        }
+                        tabBarIcon: ({ focused }) => (
+                            <Image
+                                source={require('../assets/icons/tabBarIcons/map-marker.png')}
+                                style={[styleRoutes.iconTabBar, { tintColor: focused ? 'white' : 'gray' }]}
+                            />
+                        )
                     }}
                 />
 
@@ -75,19 +61,13 @@ export function Routes() {
                     name='Humor'
                     component={HumorDiario}
                     options={{
-                        tabBarShowLabel: true,
                         headerShown: false,
-                        tabBarIcon: ({ focused, size, color }) => {
-                            if (focused) {
-                                return (
-                                    <Image
-                                        source={focused ? require('../assets/icons/tabBarIcons/add.png') : require('../assets/icons/tabBarIcons/add.png')}
-                                        style={styleRoutes.iconTabBar}
-                                    />
-                                );
-                            }
-                        }
-
+                        tabBarIcon: ({ focused }) => (
+                            <Image
+                                source={require('../assets/icons/tabBarIcons/add.png')}
+                                style={[styleRoutes.iconTabBar, { tintColor: focused ? 'white' : 'gray' }]}
+                            />
+                        )
                     }}
                 />
 
@@ -95,20 +75,13 @@ export function Routes() {
                     name='Historico'
                     component={RelatorioHumor}
                     options={{
-                        tabBarShowLabel: true,
                         headerShown: false,
-
-                        tabBarIcon: ({ focused, size, color }) => {
-                            if (focused) {
-                                return (
-                                    <Image
-                                        source={focused ? require('../assets/icons/tabBarIcons/chart-histogram.png') : require('../assets/icons/tabBarIcons/chart-histogram.png')}
-                                        style={styleRoutes.iconTabBar}
-                                    />
-                                );
-                            }
-                        }
-
+                        tabBarIcon: ({ focused }) => (
+                            <Image
+                                source={require('../assets/icons/tabBarIcons/chart-histogram.png')}
+                                style={[styleRoutes.iconTabBar, { tintColor: focused ? 'white' : 'gray' }]}
+                            />
+                        )
                     }}
                 />
 
@@ -116,18 +89,13 @@ export function Routes() {
                     name='Ajuda'
                     component={PrecisoDeAjudaScreen}
                     options={{
-                        tabBarShowLabel: true,
                         headerShown: false,
-                        tabBarIcon: ({ focused }) => {
-                            if (focused) {
-                            return (
-                                <Image
-                                    source={focused ? require('../assets/icons/tabBarIcons/hospital.png') : require('../assets/icons/tabBarIcons/hospital.png')}
-                                    style={styleRoutes.iconTabBar}
-                                />
-                            );
-                            }   
-                        }
+                        tabBarIcon: ({ focused }) => (
+                            <Image
+                                source={require('../assets/icons/tabBarIcons/hospital.png')}
+                                style={[styleRoutes.iconTabBar, { tintColor: focused ? 'white' : 'gray' }]}
+                            />
+                        )
                     }}
                 />
 

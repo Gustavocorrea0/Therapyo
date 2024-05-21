@@ -12,8 +12,8 @@ export default styles = StyleSheet.create({
   },
 
   containerBranco: {
-    width: 410,
-    height: '90%',
+    width: 413,
+    height: '95%',
     backgroundColor: '#FFFFFF',
     marginTop: 20,
     borderTopLeftRadius: 50,
@@ -23,7 +23,7 @@ export default styles = StyleSheet.create({
 
   containerTopo: {
     width: '100%',
-    height: 70,
+    height: 140,
     backgroundColor: '#09B5EB',
     alignItems: 'center'
   },
@@ -31,7 +31,7 @@ export default styles = StyleSheet.create({
   tituloTherapyo: {
     fontSize: 27,
     color: "#FFFFFF",
-    marginTop: 25,
+    marginTop: 95,
     fontWeight: 'bold'
   },
 
@@ -43,11 +43,11 @@ export default styles = StyleSheet.create({
     fontWeight: 'bold'
   },
 
-  listaHumor: { 
-    padding: 10 ,
-    alignItems:'center',
+  listaHumor: {
+    padding: 10,
+    alignItems: 'center',
   },
-  
+
   itemHumor: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -55,8 +55,8 @@ export default styles = StyleSheet.create({
     padding: 30,
     backgroundColor: '#363636',
     marginBottom: 10,
-    paddingHorizontal: 20, 
-    width: 350, 
+    paddingHorizontal: 20,
+    width: 350,
     height: 80
   },
 
@@ -66,13 +66,14 @@ export default styles = StyleSheet.create({
     color: "#FFFFFF",
     fontSize: 16,
     textAlign: 'left',
+    marginLeft: -10
   },
 
   textHumor: {
     fontSize: 16,
     color: "#FFFFFF",
     fontWeight: 'bold',
-    flex: 1, 
+    flex: 1,
     fontSize: 16,
     textAlign: 'right'
   },
@@ -80,10 +81,39 @@ export default styles = StyleSheet.create({
   pickerStyle: {
     height: 50,
     width: 150,
-    marginBottom:10,
-    marginTop:10
+    marginBottom: 10,
+    marginTop: 10
   },
- 
+
+  loadingText: {
+    textAlign: 'center',
+    marginVertical: 20,
+    fontSize: 18,
+  },
+
+  iconContainer: {
+    margin: -20,
+    width: 75,
+    height: 75,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  clearData: {
+    width: 350,
+    height: 50,
+    backgroundColor: '#4169E1',
+    borderRadius: 20,
+    alignItems: 'center',
+    margin: 7
+  },
+
+  textButtonClearData: {
+    color: '#FFFFFF',
+    fontSize: 24,
+    marginTop: 6
+  }
+
 })
 
- 
+

@@ -32,15 +32,19 @@ export default function HumorDiario() {
   };
 
   const confirmHumor = async () => {
-    await addDailyHumor(today, selectedHumor);
+    const result = await addDailyHumor(today, selectedHumor);
+    if (result) {
+        setModalVisible(true);
+    } else {
+        alert('Usuário já lançou um humor nas últimas 24 horas');
+    }
     showAllHumors();
-    setModalVisible(true);
-  };
+};
 
   const showAllHumors = async () => {
     const allHumors = await getAllHumors();
     console.log('Todos os humores cadastrados')
-    allHumors.forEach(({ date, humor}) => {
+    allHumors.forEach(({ date, humor }) => {
       console.log(`Data: ${date}, Humor: ${humor}`)
     });
   };
@@ -92,7 +96,7 @@ export default function HumorDiario() {
       >
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
-            <Text style={styles.modalText}>Sentimento cadastrado</Text>
+            <Text style={styles.modalText}>Humor Cadastrado</Text>
             <TouchableOpacity
               style={[styles.button, styles.buttonClose]}
               onPress={() => setModalVisible(!modalVisible)}
