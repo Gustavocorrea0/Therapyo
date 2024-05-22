@@ -4,10 +4,10 @@ import { Ionicons } from "@expo/vector-icons";
 import { View, Image } from 'react-native';
 
 import DicasSobreSaude from './dicasSobreSaude/dicasSobreSaude';
-import PrecisoDeAjudaScreen from './precisoDeAjuda/precisoDeAjudaScreen';
 import ClinicasParaAjudaPsicologica from './clinicasParaAjudaPsicologica/clinicasParaAjuda';
 import HumorDiario from './controleHumorDiario/humorDiario';
 import RelatorioHumor from './relatorioHumor/RelatorioHumor';
+import AjudaStack from './precisoDeAjuda/routesAjuda'
 
 import styleRoutes from './styleRoutes';
 
@@ -87,7 +87,7 @@ export function Routes() {
 
                 <Tab.Screen
                     name='Ajuda'
-                    component={PrecisoDeAjudaScreen}
+                    component={AjudaStack}
                     options={{
                         headerShown: false,
                         tabBarIcon: ({ focused }) => (

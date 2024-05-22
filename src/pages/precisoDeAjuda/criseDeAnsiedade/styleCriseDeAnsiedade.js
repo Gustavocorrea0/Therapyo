@@ -11,7 +11,7 @@ export default styles = StyleSheet.create({
 
   containerBranco: {
     width: 410,
-    height: '90%',
+    height: '100%',
     backgroundColor: '#FFFFFF',
     marginTop: 5,
     borderTopLeftRadius: 50,
@@ -21,7 +21,7 @@ export default styles = StyleSheet.create({
 
   containerTopo: {
     width: '100%',
-    height: 100,
+    height: 155,
     backgroundColor: '#09B5EB',
     alignItems: 'center'
   },
@@ -29,7 +29,7 @@ export default styles = StyleSheet.create({
   tituloTherapyo: {
     fontSize: 27,
     color: "#FFFFFF",
-    marginTop: 55,
+    marginTop: 114,
     fontWeight: 'bold'
   },
 
