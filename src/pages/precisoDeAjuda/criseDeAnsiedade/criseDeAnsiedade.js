@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SafeAreaView, Text, View, TouchableOpacity, ScrollView, Image } from 'react-native';
+import { SafeAreaView, Text, View, TouchableOpacity, ScrollView, Image, Linking } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import styles from './styleCriseDeAnsiedade';
 
@@ -16,7 +16,7 @@ function CriseDeAnsiedadeScreen() {
   };
 
   const handleOpenSpotify = () => {
-    Linking.openURL(SpotifyLink);
+    Linking.openURL('https://open.spotify.com/playlist/7K3scENpOi7ZPZUHfnfic3?si=ljw8eDYLSXm_WrQzJVuGrw&pi=trJS7xjgRWCXI');
   };
 
   const handleOpenYoutube = () => {

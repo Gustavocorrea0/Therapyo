@@ -78,7 +78,7 @@ export default styles = StyleSheet.create({
     marginLeft: '-4%',
   },
 
-  BotaoMidia: {
+  Spotify: {
     width: 311,
     height: 48,
     paddingHorizontal: '10%',
@@ -86,15 +86,17 @@ export default styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     flexDirection: 'row',
-  },
-
-  Spotify: {
-    ...styles.BotaoMidia,
     backgroundColor: '#1ED162',
   },
 
   Youtube: {
-    ...styles.BotaoMidia,
+    width: 311,
+    height: 48,
+    paddingHorizontal: '10%',
+    marginTop: 0,
+    borderRadius: 10,
+    alignItems: 'center',
+    flexDirection: 'row',
     backgroundColor: '#C52727',
   },
 
