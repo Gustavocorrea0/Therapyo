@@ -2,7 +2,13 @@ import React from 'react';
 import { SafeAreaView, Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
 import styleDicas from './styleDicas';
 
-function DicasSobreSaude() {
+function DicasSobreSaude({ navigation }) {
+
+    // CHAMA A DICA
+    const handleDica1Press = () => {
+        navigation.navigate('Tela1');
+    }
+
     return (
         <SafeAreaView style={styleDicas.container}>
             <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }} showsVerticalScrollIndicator={false}>
@@ -14,7 +20,17 @@ function DicasSobreSaude() {
 
                 <View style={styleDicas.containerBranco}>
                     <Text style={styleDicas.tituloContainerBranco}>Alternativas</Text>
-                    {/* PROGRAMAR NESTA VIEW */}
+
+                    <View style={styleDicas.containerAmarelo}>
+                        <Text style={styleDicas.tituloContainerAmarelo}>Nosso objetivo é te auxiliar!</Text>
+                        <Text style={styleDicas.tituloContainerAmarelo}>ESTE APP SUBSTITUI UM PROFISSIONAL</Text>
+                    </View>
+
+                    {/* BOTAO */}
+                    <TouchableOpacity style={styleDicas.buttonRoutes} onPress={handleDica1Press}>
+                        <Text style={styleDicas.textButton}>Pratique atividades fisicas</Text>
+                    </TouchableOpacity>
+
                 </View>
             </ScrollView>
         </SafeAreaView>
