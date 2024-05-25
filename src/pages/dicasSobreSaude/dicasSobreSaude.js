@@ -23,7 +23,7 @@ function DicasSobreSaude({ navigation }) {
 
                     <View style={styleDicas.containerAmarelo}>
                         <Text style={styleDicas.tituloContainerAmarelo}>Nosso objetivo é te auxiliar!</Text>
-                        <Text style={styleDicas.tituloContainerAmarelo}>ESTE APP SUBSTITUI UM PROFISSIONAL</Text>
+                        <Text style={styleDicas.tituloContainerAmarelo}>ESTE NÃO APP SUBSTITUI UM PROFISSIONAL</Text>
                     </View>
 
                     {/* BOTAO */}
