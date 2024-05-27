@@ -11,7 +11,7 @@ export default styles = StyleSheet.create({
     
       containerBranco: {
         width: 410,
-        height: '90%',
+        height: '95%',
         backgroundColor: '#FFFFFF',
         marginTop: 20,
         borderTopLeftRadius: 50,
@@ -21,7 +21,7 @@ export default styles = StyleSheet.create({
     
       containerTopo: {
         width: '100%',
-        height: 100,
+        height: 115,
         backgroundColor: '#09B5EB',
         alignItems: 'center'
       },
@@ -29,7 +29,7 @@ export default styles = StyleSheet.create({
       tituloTherapyo: {
         fontSize: 27,
         color: "#FFFFFF",
-        marginTop: 55,
+        marginTop: 75,
         fontWeight: 'bold'
       },
     
@@ -46,5 +46,24 @@ export default styles = StyleSheet.create({
         color: '#000000',
         fontWeight: 'bold',
         marginTop: 20
+      },
+
+      acessar: {
+        width: 311,
+        height: 48,
+        paddingHorizontal: '10%',
+        marginTop: 0,
+        borderRadius: 10,
+        alignItems: 'center',
+        flexDirection: 'row',
+        backgroundColor: '#126EA1'
+      },
+      
+      tituloBotaoAcessar: {
+        fontSize: 27,
+        fontWeight: 'bold',
+        color: '#090808',
+        alignItems: 'center',
+        marginLeft: '25%'
       }
 })
