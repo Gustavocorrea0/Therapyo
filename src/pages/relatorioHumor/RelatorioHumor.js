@@ -90,7 +90,7 @@ function RelatorioHumor() {
           <View style={{ backgroundColor: '#363636', height: 40, width: 350, alignItems: 'center' }}>
             <Text style={{ marginLeft: -240, color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', marginTop: 4, marginLeft: -230 }}>Dia</Text>
             <Text style={{ marginLeft: -240, color: '#FFFFFF', fontSize: 20, fontWeight: 'bold', marginTop: -26, marginLeft: 145 }}>Humor</Text>
-            <View style={{ width: 10, height: 80, backgroundColor: '#FFFFFF', marginLeft: -85, marginTop: -33 }}></View>
+            <View style={{ width: 10, height: 80, backgroundColor: '#FFFFFF', marginLeft: -80, marginTop: -33 }}></View>
           </View>
           <View style={styles.listaHumor}>
             {filteredHumors.map((item, index) => (

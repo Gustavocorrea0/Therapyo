@@ -17,11 +17,11 @@ function Dica2() {
                 <Text style={styles.tituloPagina}>Dicas de Saúde</Text>
 
                 <View style={styles.containerBranco}>
-                    <Text style={{ color: '#000000', fontSize: 25, fontWeight: 'bold', marginTop: 22}}>
+                    <Text style={{ color: '#000000', fontSize: 25, fontWeight: 'bold', marginTop: 22, textAlign: 'justify'}}>
                         Busque uma dieta balanceada e hidrate-se
                     </Text>
 
-                    <Text style={{ color: '#000000', fontSize: 20, fontWeight: 'normal', marginTop: 22}}>
+                    <Text style={{ color: '#000000', fontSize: 20, fontWeight: 'normal', marginTop: 22, textAlign: 'justify'}}>
                         Uma alimentação saudável e balanceada desempenha um papel fundamental na manutenção da energia e 
                         disposição ao longo do dia. Uma dieta rica em nutrientes essenciais como vitaminas, minerais, 
                         proteínas e gorduras saudáveis não só nutre o corpo, mas também beneficia a saúde mental. 

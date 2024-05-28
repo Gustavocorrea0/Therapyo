@@ -35,8 +35,6 @@ function DicasSobreSaude({ navigation }) {
         navigation.navigate('Tela10');
     }
 
-
-
     return (
         <SafeAreaView style={styleDicas.container}>
             <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }} showsVerticalScrollIndicator={false}>

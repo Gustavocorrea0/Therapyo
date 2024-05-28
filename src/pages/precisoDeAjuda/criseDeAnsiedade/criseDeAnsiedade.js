@@ -93,6 +93,9 @@ function CriseDeAnsiedadeScreen() {
             </Text>
           </View>
         </View>
+        <View style={{height: 30, width: 100}}>
+
+        </View>
       </ScrollView>
     </SafeAreaView>
   );

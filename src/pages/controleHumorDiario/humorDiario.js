@@ -81,6 +81,7 @@ export default function HumorDiario() {
             <Text style={styles.tituloBotaoClinica}>Confirmar</Text>
           </TouchableOpacity>
 
+          <View styles={{width: '100%', height: '10%', backgroundColor:'#FFFFFF'}}></View>
         </View>
 
       </ScrollView>

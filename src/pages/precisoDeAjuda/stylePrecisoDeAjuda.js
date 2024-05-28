@@ -4,14 +4,11 @@ export default styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#126EA1',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 40,
     },
 
     containerBranco: {
-        width: 410,
-        height: '90%',
+        width: '100%',
+        height: '95%',
         backgroundColor: '#FFFFFF',
         marginTop: 20,
         borderTopLeftRadius: 50,
@@ -21,17 +18,16 @@ export default styles = StyleSheet.create({
 
     containerTopo: {
         width: '100%',
-        height: 100,
+        height: '31%',
         backgroundColor: '#09B5EB',
         alignItems: 'center'
     },
 
     tituloTherapyo: {
         fontSize: 27,
+        marginTop: '49%',
         color: "#FFFFFF",
-        marginTop: 60,
-        fontWeight: 'bold',
-        
+        fontWeight: 'bold'
     },
 
     tituloPagina: {
@@ -61,7 +57,7 @@ export default styles = StyleSheet.create({
         borderRadius: 10,
         alignItems: 'center',
         textAlignVertical: 'center',
-       // elevation: 5, // sombra mas ta meio zoado quando segura o botão :v - sla
+        // elevation: 5, // sombra mas ta meio zoado quando segura o botão :v - sla
 
 
     }

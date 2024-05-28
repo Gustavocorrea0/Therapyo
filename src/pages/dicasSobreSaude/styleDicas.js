@@ -4,14 +4,11 @@ export default styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#126EA1',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 40,
   },
 
   containerBranco: {
-    width: 410,
-    height: '95%', //ALTERAR
+    width: '100%',
+    height: '95%', 
     backgroundColor: '#FFFFFF',
     marginTop: 20,
     borderTopLeftRadius: 50,
@@ -21,15 +18,15 @@ export default styles = StyleSheet.create({
 
   containerTopo: {
     width: '100%',
-    height: 115, //ALTERAR
+    height: '16.5%',
     backgroundColor: '#09B5EB',
     alignItems: 'center'
   },
 
   tituloTherapyo: {
     fontSize: 27,
+    marginTop: '42%',
     color: "#FFFFFF",
-    marginTop: 67, //ALTERAR
     fontWeight: 'bold'
   },
 
@@ -78,6 +75,7 @@ export default styles = StyleSheet.create({
     color: '#FFFFFF',
     marginTop: 20,
     fontWeight: 'bold',
+    textAlign: 'justify',
     fontSize: 20
   }
 

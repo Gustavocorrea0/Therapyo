@@ -3,14 +3,11 @@ import { StyleSheet } from "react-native";
 export default styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#126EA1',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 40,
+        backgroundColor: '#126EA1'
       },
     
       containerBranco: {
-        width: 410,
+        width: '100%',
         height: '95%',
         backgroundColor: '#FFFFFF',
         marginTop: 20,
@@ -21,7 +18,7 @@ export default styles = StyleSheet.create({
     
       containerTopo: {
         width: '100%',
-        height: 115,
+        height: '30.3%',
         backgroundColor: '#09B5EB',
         alignItems: 'center'
       },
@@ -29,7 +26,7 @@ export default styles = StyleSheet.create({
       tituloTherapyo: {
         fontSize: 27,
         color: "#FFFFFF",
-        marginTop: 77,
+        marginTop: '48.8%',
         fontWeight: 'bold'
       },
     

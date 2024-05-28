@@ -42,23 +42,23 @@ function Dica10() {
                     </Text>
 
                     <Text style={{ color: '#000000', fontSize: 20, fontWeight: 'normal', marginTop: 22}}
-                    >   * Meditação.                       
+                    >   - Meditação.                       
                     </Text>
 
                     <Text style={{ color: '#000000', fontSize: 20, fontWeight: 'normal', marginTop: 22}}
-                    >   * Respiração.                       
+                    >   - Respiração.                       
                     </Text>
 
                     <Text style={{ color: '#000000', fontSize: 20, fontWeight: 'normal', marginTop: 22}}
-                    >   * Massagem.                       
+                    >   - Massagem.                       
                     </Text>
 
                     <Text style={{ color: '#000000', fontSize: 20, fontWeight: 'normal', marginTop: 22}}
-                    >   * Yoga.                       
+                    >   - Yoga.                       
                     </Text>
 
                     <Text style={{ color: '#000000', fontSize: 20, fontWeight: 'normal', marginTop: 22}}
-                    >   * Alongamento.                       
+                    >   - Alongamento.                       
                     </Text>
 
                     <Text style={{ color: '#000000', fontSize: 20, fontWeight: 'normal', marginTop: 22}}>
