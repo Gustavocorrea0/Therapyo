@@ -4,7 +4,7 @@
     "slug": "therapyo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo-therapyo-of.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
