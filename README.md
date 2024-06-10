@@ -15,7 +15,7 @@
     Banco de dados: local(dispositivo)
 
 > 🛠️ Ferramentas
-<br>
+
 IDEA: [Visual Studio Code](https://code.visualstudio.com/) &nbsp;&middot;&nbsp; <br>
 Expo Dev: [Expo](https://expo.dev/) &nbsp;&middot;&nbsp; <br>
 Linguagem: [React Native](https://reactnative.dev/) &nbsp;&middot;&nbsp; <br>
