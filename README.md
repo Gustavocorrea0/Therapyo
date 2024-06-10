@@ -14,6 +14,10 @@
     Linguagem de Programação: React Native(JavaScript)
     Banco de dados: local(dispositivo)
 
+## Telas
+
+<img src="img-telas-therapyo/tela-1.jpeg" alt="Alt text" width="200"/>
+
 ## Como iniciar o projeto
 
 1 - No cmd digite: git clone https://github.com/Gustavocorrea0/Therapyo.git<br>
