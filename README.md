@@ -16,7 +16,9 @@
 
 ## Telas
 
-<img src="img-telas-therapyo/tela-1.jpeg" alt="Alt text" width="200"/>
+<img src="img-telas-therapyo/tela-1.jpeg" alt="Alt text" width="200"/> <img src="img-telas-therapyo/tela-2.jpeg" alt="Alt text" width="200"/>
+<img src="img-telas-therapyo/tela-3.jpeg" alt="Alt text" width="200"/> <img src="img-telas-therapyo/tela-4.jpeg" alt="Alt text" width="200"/>
+<img src="img-telas-therapyo/tela-5.jpeg" alt="Alt text" width="200"/>
 
 ## Como iniciar o projeto
 
