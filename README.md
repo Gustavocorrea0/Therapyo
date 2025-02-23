@@ -30,7 +30,7 @@ Expo Dev: [Expo](https://expo.dev/) &nbsp;&middot;&nbsp; <br>
 2 - Extraia o arquivo .zip para o local desejado<br>
 3 - Abra o projeto no [Visual Studio Code](https://code.visualstudio.com/) &nbsp;&middot;&nbsp;<br>
 4 - No cmd digite: npm install<br>
-5 - Aguarde a instalação das dependecias<br>
+5 - Aguarde a instalação das dependencias<br>
 6 - No cmd digite: npx expo start<br>
 7 - Ou no cmd digite: npm start<br>
 8 - Aguarde a inicialização do projeto<br>
